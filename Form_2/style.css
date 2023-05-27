@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,300;0,400;0,800;1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+html,
+body {
+  background: url(https://images.unsplash.com/photo-1685028667224-55f94b358d29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80) center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+html .containner,
+body .containner {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  animation: fadeInDown 0.7s both;
+}
+html .containner .child,
+body .containner .child {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 450px;
+  padding: 10px 15px;
+  border-radius: 15px 25px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3725490196);
+  box-shadow: 2px 2px 2px rgba(37, 37, 37, 0.25);
+}
+html .containner .child h1,
+body .containner .child h1 {
+  font-family: "Barlow Condensed";
+  font-size: 2.5em;
+  letter-spacing: 2.5px;
+  line-height: 1.5em;
+  color: #121212;
+}
+
+form {
+  text-align: left;
+}
+form .containner_user,
+form .containner_pass {
+  margin: 20px 0;
+}
+form h2 {
+  margin: 5px 5px;
+  padding: 0 5px;
+  border-left: 5px dashed #bf8892;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 1.25em;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 2px;
+  color: #121212;
+}
+form h2 h2:first-child {
+  margin-top: 25px;
+}
+form #username,
+form #password {
+  margin: 10px 0;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 50px;
+  width: 100%;
+  height: 30px;
+}
+form input::-moz-placeholder {
+  font-family: sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  line-height: 15em;
+}
+form input::placeholder {
+  font-family: sans-serif;
+  font-size: 0.9em;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  line-height: 15em;
+}
+
+#btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 10px 0;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 50px;
+  width: 100px;
+  background: #bf8892;
+  box-shadow: 2px 2px 2px rgba(37, 37, 37, 0.25);
+  color: #ffffff;
+  font-family: "Barlow Condensed";
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  align-items: center;
+  text-align: center;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  cursor: pointer;
+}
+
+#btn:hover {
+  transform: translate(-50%, -10px);
+  transition: 0.8s;
+}
+
+#forget_password {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50px);
+  margin: 15px 0;
+  padding: 5px 10px;
+  font-family: "Barlow Condensed";
+  font-weight: 500;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#forget_password h3 {
+  color: #ffffff;
+  text-shadow: 2px 2px 2px rgba(37, 37, 37, 0.25);
+}
+
+#forget_password h3:hover {
+  color: #9cbae2;
+  transition: 0.5s;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 100;
+    transform: translate(0);
+  }
+}/*# sourceMappingURL=style.css.map */
